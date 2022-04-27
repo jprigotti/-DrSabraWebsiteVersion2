@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$light-color: #f4f4f4;
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+// scss-docs-start color-variables
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #198754 !default;
+$teal: #20c997 !default;
+$cyan: #0dcaf0 !default;
+
+$teal-100: rgba($color: $teal, $alpha: 0.1) !default;
+$teal-200: rgba($color: $teal, $alpha: 0.2) !default;
+$teal-300: rgba($color: $teal, $alpha: 0.3) !default;
+$teal-400: rgba($color: $teal, $alpha: 0.4) !default;
+$teal-500: rgba($color: $teal, $alpha: 0.5) !default;
+$teal-600: rgba($color: $teal, $alpha: 0.6) !default;
+$teal-700: rgba($color: $teal, $alpha: 0.7) !default;
+$teal-800: rgba($color: $teal, $alpha: 0.8) !default;
+$teal-900: rgba($color: $teal, $alpha: 0.9) !default;
+
+$cyan-100: rgba($color: $cyan, $alpha: 0.1) !default;
+$cyan-200: rgba($color: $cyan, $alpha: 0.2) !default;
+$cyan-300: rgba($color: $cyan, $alpha: 0.3) !default;
+$cyan-400: rgba($color: $cyan, $alpha: 0.4) !default;
+$cyan-500: rgba($color: $cyan, $alpha: 0.5) !default;
+$cyan-600: rgba($color: $cyan, $alpha: 0.6) !default;
+$cyan-700: rgba($color: $cyan, $alpha: 0.7) !default;
+$cyan-800: rgba($color: $cyan, $alpha: 0.8) !default;
+$cyan-900: rgba($color: $cyan, $alpha: 0.9) !default;
+
+$green-100: rgba($color: $green, $alpha: 0.1) !default;
+$green-200: rgba($color: $green, $alpha: 0.2) !default;
+$green-300: rgba($color: $green, $alpha: 0.3) !default;
+$green-400: rgba($color: $green, $alpha: 0.4) !default;
+$green-500: rgba($color: $green, $alpha: 0.5) !default;
+$green-600: rgba($color: $green, $alpha: 0.6) !default;
+$green-700: rgba($color: $green, $alpha: 0.7) !default;
+$green-800: rgba($color: $green, $alpha: 0.8) !default;
+$green-900: rgba($color: $green, $alpha: 0.9) !default;
+
+// $-100: rgba($color: $, $alpha: 0.1) !default;
+// $-200: rgba($color: $, $alpha: 0.2) !default;
+// $-300: rgba($color: $, $alpha: 0.3) !default;
+// $-400: rgba($color: $, $alpha: 0.4) !default;
+// $-500: rgba($color: $, $alpha: 0.5) !default;
+// $-600: rgba($color: $, $alpha: 0.6) !default;
+// $-700: rgba($color: $, $alpha: 0.7) !default;
+// $-800: rgba($color: $, $alpha: 0.8) !default;
+// $-900: rgba($color: $, $alpha: 0.9) !default;
+
+
+// NAVBAR
+
+// .navbar {}
+
+.navbar-dark.bg-dark {
+  background-color: $teal-900 !important;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.navbar .navbar-nav a {
+  color: $gray-800 !important;
+  font-weight: 600;
+  margin: 0 2rem;
+  font-size: 1.2rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: $gray-100 !important;
+  font-weight: 600;
+}
+
+// SHOWCASE
+.showcase {
+  height: 800px;
+
+}
+
+// CONTACT
+.contact {
+  background-image: url(../images/estetoscopio.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  // background-position: center;
+  // height: 70vh;
+  // background-attachment: fixed;
+}
+
+.contact .contact-shadow {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+.contact .contact-container {
+  max-width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact .contact-info {
+  width: 45%;
+  background-color: $teal-700;
+  padding: 2rem;
+  color: $gray-100;
+  border-radius: 10px;
+}
+
+.contact .contact-info h6 {
+  color: $gray-300;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.contact .contact-info p {
+  color: $gray-100;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.contact .contact-form {
+  width: 45%;
+
+}
+
+.contact .contact-form .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .contact-form h3 {
+  color: $gray-100;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
+.contact .contact-form .form-label {
+  margin-bottom: 0.3rem;
+  color: $gray-200;
+  font-size: 1.2rem;
+}
+
+.contact .contact-form .form-input {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  color: $gray-900;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact .contact-form .form-message {
+  border: none;
+  border-radius: 5px;
+  padding-left: 0.5rem;
+}
+
+.contact .contact-form .form-input:focus {
+  outline: 2px solid $gray-700;
+}
+
+.contact .contact-form .form-message:focus {
+  outline: 1px solid $gray-800;
+}
+
+.contact .contact-form .btn {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: $teal-900;
+  width: 200px;
+  border-radius: 10px;
+  color: $gray-200;
+  font-size: 1.5rem;
+}
+
+.contact .contact-form .btn:hover {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: $teal-700;
+  color: $gray-300;
+
+}
+
+.contact .contact-form .btn:active {
+  transform: scale(0.97);
+  border: none;
+}
+
+
+.footer {
+  background-color: $gray-700;
+}
+
+.footer .container-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.footer .footer-logo {
+  grid-column: 1;
+  color: $gray-200;
+  margin-left: auto;
+  padding: 1rem 0;
+
+}
+
+.footer .footer-logo h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.footer .footer-social {
+  justify-self: center;
+}
+
+.footer .footer-social a {
+  color: $gray-200;
+}
+
+.footer .footer-social i {
+  padding: 0 0.5rem;
+}
+
+.footer .logo {
+  justify-self: center;
+}
+
+.footer .logo img {
+  width: 100px;
+}
+
+.footer-name {
+  background-color: $gray-800;
+  color: $gray-500;
+  text-align: center;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+
+
+/* ****************************************************** */
+/* MEDIA QUERIES */
+/* ****************************************************** */
+
+/* MEDIA QUERIES LG 992*/
+@media(max-width: 992px) {
+  .showcase .content {
+    width: 100%;
+    margin-bottom: 20vh;
+    text-align: center;
+  }
+}
+
+/* ****************************************************** */
+/* MEDIA QUERIES */
+/* ****************************************************** */
+
+/* MEDIA QUERIES MD 768*/
+@media(max-width: 768px) {
+
+  .contact {
+    height: 100%;
+  }
+
+  .contact .contact-container {
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+
+  }
+
+  .contact .contact-container .contact-info {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact .contact-container .contact-info h6 {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .contact .contact-container .contact-info p {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact .contact-container .contact-form {
+    width: 100%;
+  }
+
+  .contact .contact-container .contact-form .btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+}
+
+
+/* ****************************************************** */
+/* MEDIA QUERIES */
+/* ****************************************************** */
+
+/* MEDIA QUERIES SM 576*/
+@media(max-width: 576px) {
+
+  .contact .contact-container .contact-form .btn {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  .footer .container-footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
+
+  .footer .container-footer .footer-logo {
+    grid-row: 1;
+    grid-column: 1 /span 3;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+
+
+  .footer .container-footer .footer-social {
+    grid-row: 2;
+    grid-column: 1 /span 3;
+  }
+
+}
