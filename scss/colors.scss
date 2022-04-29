@@ -97,11 +97,66 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
   font-weight: 600;
 }
 
-// SHOWCASE
-.showcase {
-  height: 800px;
+/* CALL TO ACTION */
 
+.container-aboutus {
+  // margin-top: 1rem;
 }
+
+.container-aboutus {
+  display: flex;
+}
+
+.container-aboutus img {
+  width: 50vw;
+  margin: 0;
+}
+
+.container-aboutus .aboutus-content {
+  background-color: $gray-300;
+  color: var(--gray-200);
+  padding: 3rem;
+}
+
+.container-aboutus .aboutus-content h2 {
+  font-weight: 600;
+}
+
+.container-aboutus .btn {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+
+.container-aboutus .btn-solid {
+  background-color: $teal-900;
+  border: 1px solid $teal-900;
+  color: $gray-100;
+}
+
+.container-aboutus .btn-solid:hover {
+  background-color: transparent;
+  border: 1px solid $teal-900;
+  color: var(--gray-900);
+    transition: 0.5s;
+}
+
+// PRESTADORES
+.prestadores{
+}
+
+.prestadores .container-prestadores{
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.prestadores .container-prestadores img{
+  width: 200px;
+}
+
 
 // CONTACT
 .contact {
@@ -275,11 +330,29 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
 
 /* MEDIA QUERIES LG 992*/
 @media(max-width: 992px) {
-  .showcase .content {
-    width: 100%;
-    margin-bottom: 20vh;
-    text-align: center;
-  }
+  // .showcase .content {
+  //   width: 100%;
+  //   margin-bottom: 20vh;
+  //   text-align: center;
+  // }
+
+.container-aboutus{
+  width: 70vw;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.container-aboutus img{
+  width: 100%;
+    }
+
+.container-aboutus .aboutus-content{
+padding: 1rem;
+font-size: 1rem;
+}
+
+
+
 }
 
 /* ****************************************************** */
@@ -288,6 +361,10 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
 
 /* MEDIA QUERIES MD 768*/
 @media(max-width: 768px) {
+
+  .container-aboutus .aboutus-content{
+ text-align: center;
+    }
 
   .contact {
     height: 100%;
@@ -298,7 +375,12 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
     flex-direction: column;
     align-items: center;
     width: 90vw;
+  }
 
+  //Prestadores
+  .prestadores .container-prestadores img{
+    width: 150px;
+    margin: 1.5rem 0;
   }
 
   .contact .contact-container .contact-info {
@@ -337,6 +419,13 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
 
 /* MEDIA QUERIES SM 576*/
 @media(max-width: 576px) {
+
+
+  .container-aboutus{
+    width: 90vw;
+    margin: 0 auto;
+    flex-direction: column;
+  }
 
   .contact .contact-container .contact-form .btn {
     width: 100%;
