@@ -53,13 +53,19 @@
 
   <section class="aboutus" id="aboutus">
     <div class="container-aboutus">
-      <img src="./images/office.jpg" alt="Consultorio">
+      
+      <!-- <img src="./images/office.jpg" alt="Consultorio">  -->
+
+      <picture>
+        <source srcset="./images/office.jpg" media="(min-width:576px)">
+        <img src="./images/office_576.jpg" alt="Consultorio">
+      </picture>
+
       <div class="aboutus-content">
         <h2>El Consultorio</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ullam architecto nostrum culpa iste voluptate
           dolore itaque cupiditate eligendi cumque, quisquam explicabo maxime dolorem quis earum provident porro eius
-          aliquam eos exercitationem veniam beatae minima dignissimos? Quia incidunt iste, optio error saepe corrupti
-          alias deleniti autem ea dolor tempora quam veniam vero.</p>
+          aliquam eos exercitationem veniam beatae minima dignissimos?</p>
         <a href="#" class="btn btn-solid">Conocé más</a>
       </div>
     </div>
