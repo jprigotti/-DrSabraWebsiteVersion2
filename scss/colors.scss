@@ -284,7 +284,7 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
 
 .footer .footer-logo {
   grid-column: 1;
-  color: $gray-200;
+  color: $gray-300;
   margin-left: auto;
   padding: 1rem 0;
 
@@ -300,7 +300,11 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
 }
 
 .footer .footer-social a {
-  color: $gray-200;
+  color: $gray-300;
+}
+
+.footer .footer-social a:hover {
+  color: $gray-500;
 }
 
 .footer .footer-social i {
