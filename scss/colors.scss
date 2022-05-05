@@ -83,6 +83,7 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
   font-size: 1.7rem;
   font-weight: 600;
   margin: 1rem 0;
+  text-shadow: 1px 1px 1px $gray-900;
 }
 
 .navbar .navbar-nav a {
@@ -98,10 +99,6 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
 }
 
 /* CALL TO ACTION */
-
-.container-aboutus {
-  // margin-top: 1rem;
-}
 
 .container-aboutus {
   display: flex;
@@ -142,7 +139,8 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
 }
 
 // PRESTADORES
-.prestadores{
+.prestadores .container-prestadores img:hover{
+  transform:scale(0.97);
 }
 
 .prestadores .container-prestadores{
@@ -205,6 +203,7 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
 
 .contact .contact-form {
   width: 45%;
+  border-radius: 5px;
 
 }
 
@@ -287,12 +286,19 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
   color: $gray-300;
   margin-left: auto;
   padding: 1rem 0;
+}
 
+.footer .footer-logo img{
+width: 50px;
+display: inline-block;
+margin-left: 30px;
+margin-right: 5px;
 }
 
 .footer .footer-logo h1 {
   font-size: 1.5rem;
   text-align: center;
+  display: inline-block;
 }
 
 .footer .footer-social {
