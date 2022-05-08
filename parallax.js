@@ -1,3 +1,11 @@
+let trigger = document.querySelector('.popUpImage');
+trigger.onclick = () =>
+document.querySelector('.containerPopup').style.display = 'contents';
+
+document.querySelector('.popup-img span').onclick = () =>{
+  document.querySelector('.containerPopup').style.display = 'none';
+}
+
 $(window).scroll(function(e) {
     parallax();
   })
@@ -18,11 +26,3 @@ $(window).scroll(function(e) {
       }
     })
   }
-
-let trigger = document.querySelector('.popUpImage');
-trigger.onclick = () =>
-document.querySelector('.containerPopup').style.display = 'contents';
-
-document.querySelector('.popup-img span').onclick = () =>{
-  document.querySelector('.containerPopup').style.display = 'none';
-}
