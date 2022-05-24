@@ -129,13 +129,15 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
   background-color: $teal-900;
   border: 1px solid $teal-900;
   color: $gray-100;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .container-aboutus .btn-solid:hover {
+  border: 2px solid $teal-900;
   background-color: transparent;
-  border: 1px solid $teal-900;
   color: var(--gray-900);
-  transition: 0.5s;
+  // transition: 0.2s;
 }
 
 // ESPECIALIDADES
@@ -178,6 +180,7 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
   margin: 0.5rem 0;
   cursor: pointer;
   z-index: 100;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .especialidades .especialidadIcon {
