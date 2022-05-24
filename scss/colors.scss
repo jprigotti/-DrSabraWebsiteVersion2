@@ -135,22 +135,68 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
   background-color: transparent;
   border: 1px solid $teal-900;
   color: var(--gray-900);
-    transition: 0.5s;
+  transition: 0.5s;
+}
+
+// ESPECIALIDADES
+
+.especialidades {
+  width: 50vw;
+  margin: 2rem auto;
+}
+
+.especialidades h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $gray-800;
+  border: 2px solid rgba(0,0,0,0.3);
+  border-radius: 50px;
+  background-color: rgba(32,201,151,.6);
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.especialidades .container-especialidades {
+  width: 80%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.especialidades .clinicaMedica,
+.terapiaIntensiva,
+.cardiologiaChagas,
+.medicoLegista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $gray-700;
+  border-radius: 10px;
+  padding: 3rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.especialidades .especialidadIcon {
+  color: $gray-700;
 }
 
 // PRESTADORES
-.prestadores h3{
+.prestadores h3 {
   text-align: center;
-background-color: $gray-700;
-color: $gray-100;
-padding: 0.5rem;
+  background-color: $gray-700;
+  color: $gray-100;
+  padding: 0.5rem;
 }
 
-.prestadores .container-prestadores img:hover{
-  transform:scale(0.97);
+.prestadores .container-prestadores img:hover {
+  transform: scale(0.97);
 }
 
-.prestadores .container-prestadores{
+.prestadores .container-prestadores {
   width: 80vw;
   margin: 0 auto;
   display: flex;
@@ -159,10 +205,10 @@ padding: 0.5rem;
   align-items: center;
 }
 
-.prestadores .container-prestadores img{
+.prestadores .container-prestadores img {
   margin: 30px;
   height: 40px;
- }
+}
 
 
 // CONTACT
@@ -297,11 +343,11 @@ padding: 0.5rem;
   padding: 1rem 0;
 }
 
-.footer .footer-logo img{
-width: 50px;
-display: inline-block;
-margin-left: 30px;
-margin-right: 5px;
+.footer .footer-logo img {
+  width: 50px;
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 5px;
 }
 
 .footer .footer-logo h1 {
@@ -344,40 +390,56 @@ margin-right: 5px;
 
 
 //---- POPUP IMAGES ------
-.containerPopup{
+.containerPopup {
   display: none;
 }
 
-.popup-img{
+.popup-img {
   position: fixed;
-  top:0; left: 0;
-  background-color: rgba(0,0,0,0.8);
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
   height: 100%;
   width: 100%;
   z-index: 100;
- }
-
-.popup-img img{
-  // display: block;
-  // margin: 3rem auto;
-width: 60%;
-position: absolute;
-top: 50%; left: 50%; 
-transform: translate(-50%, -50%);
-border: 3px solid $gray-200;
-border-radius: 5px;
-object-fit: cover;
 }
 
- .popup-img span{
-   position: absolute;
-   top: 0; right: 1rem;
-   font-size: 3rem;
-   font-weight: bolder;
-   color: $gray-200;
-   cursor: pointer;
-   z-index: 100;
- }
+// .popup-img img{
+.popup-img .carousel {
+  // display: block;
+  // margin: 3rem auto;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid $gray-200;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.carousel-control-prev .navIconPosition {
+  position: absolute;
+  top: 50%;
+  left: -30%;
+}
+
+.carousel-control-next .navIconPosition {
+  position: absolute;
+  top: 50%;
+  right: -30%;
+}
+
+.popup-img span {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: $gray-200;
+  cursor: pointer;
+  z-index: 100;
+}
 
 
 
@@ -394,37 +456,53 @@ object-fit: cover;
   //   text-align: center;
   // }
 
-.container-aboutus{
-  width: 70vw;
-  margin: 0 auto;
-  flex-direction: column;
-}
+  .container-aboutus {
+    width: 70vw;
+    margin: 0 auto;
+    flex-direction: column;
+  }
 
-.container-aboutus img{
-  width: 100%;
-    }
+  .container-aboutus img {
+    width: 100%;
+  }
 
-.container-aboutus .aboutus-content{
-padding: 1rem;
-font-size: 1rem;
-}
+  .container-aboutus .aboutus-content {
+    padding: 1rem;
+    font-size: 1rem;
+  }
 
-.popup-img img{
-  width: 90%;
+  .popup-img img {
+    width: 90%;
+  }
+
+  .popup-img .carousel {
+    width: 90%;
+  }
+
+  .carousel-control-prev .navIconPosition {
+    position: absolute;
+    top: 110%;
+    left: 20%;
+  }
+
+  .carousel-control-next .navIconPosition {
+    position: absolute;
+    top: 110%;
+    right: 20%;
   }
 
 }
 
 /* ****************************************************** */
-/* MEDIA QUERIES */
+/* MEDIA QUERIES MD 768*/
 /* ****************************************************** */
 
-/* MEDIA QUERIES MD 768*/
+
 @media(max-width: 768px) {
 
-  .container-aboutus .aboutus-content{
- text-align: center;
-    }
+  .container-aboutus .aboutus-content {
+    text-align: center;
+  }
 
   .contact {
     height: 100%;
@@ -437,11 +515,49 @@ font-size: 1rem;
     width: 90vw;
   }
 
+  .popup-img .carousel {
+    width: 90%;
+  }
+
+  .carousel-control-prev .navIconPosition {
+    position: absolute;
+    top: 110%;
+    left: 20%;
+  }
+
+  .carousel-control-next .navIconPosition {
+    position: absolute;
+    top: 110%;
+    right: 20%;
+  }
+
   //Prestadores
-  .prestadores .container-prestadores img{
+  .prestadores .container-prestadores img {
     height: 35px;
     margin: 1rem 1rem;
   }
+
+  .especialidades {
+    width: 80vw;
+    margin: 2rem auto;
+  }
+
+  .especialidades .container-especialidades {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .especialidades h3 {
+    font-size: 1.3rem;
+  }
+
+  .especialidades .clinicaMedica,
+.terapiaIntensiva,
+.cardiologiaChagas,
+.medicoLegista {
+  padding: 2.5rem;
+  margin: 0.5rem 0;
+}
 
   .contact .contact-container .contact-info {
     width: 100%;
@@ -470,22 +586,34 @@ font-size: 1rem;
     margin-bottom: 0;
   }
 
-  .popup-img img{
-    width: 90%;
-    }
+  .popup-img .carousel {
+    width: 70%;
+  }
+
+  .carousel-control-prev .navIconPosition {
+    position: absolute;
+    top: 50%;
+    left: -70%;
+  }
+
+  .carousel-control-next .navIconPosition {
+    position: absolute;
+    top: 50%;
+    right: -70%;
+  }
 
 }
 
 
 /* ****************************************************** */
-/* MEDIA QUERIES */
+/* MEDIA QUERIES SM 576*/
 /* ****************************************************** */
 
-/* MEDIA QUERIES SM 576*/
+
 @media(max-width: 576px) {
 
 
-  .container-aboutus{
+  .container-aboutus {
     width: 90vw;
     margin: 0 auto;
     flex-direction: column;
@@ -516,8 +644,20 @@ font-size: 1rem;
     grid-column: 1 /span 3;
   }
 
-  .popup-img img{
-  width: 90%;
+  .popup-img .carousel {
+    width: 90%;
+  }
+
+  .carousel-control-prev .navIconPosition {
+    position: absolute;
+    top: 110%;
+    left: 20%;
+  }
+
+  .carousel-control-next .navIconPosition {
+    position: absolute;
+    top: 110%;
+    right: 20%;
   }
 
 }
