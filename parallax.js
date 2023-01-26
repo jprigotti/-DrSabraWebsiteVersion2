@@ -1,10 +1,21 @@
-let trigger = document.querySelector('.popUpImage');
-trigger.onclick = () =>
-document.querySelector('.containerPopup').style.display = 'contents';
+let trigger = document.querySelector('#popUpImage');
+trigger.addEventListener("click", ()=>{
+  document.querySelector('.containerPopup').style.display = 'block';
+});
+
+let trigger1 = document.querySelector('#popUpImage1');
+trigger1.addEventListener("click", ()=>{
+  document.querySelector('.containerPopup').style.display = 'block';
+});
+
+
 
 document.querySelector('.popup-img span').onclick = () =>{
   document.querySelector('.containerPopup').style.display = 'none';
 }
+
+
+
 
 $(window).scroll(function(e) {
     parallax();
