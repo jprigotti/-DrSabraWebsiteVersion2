@@ -18,6 +18,17 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
+
+$green-baseline: rgba(12, 184, 182, 1);
+$green-hover: rgba(7, 112, 111, 1);
+$green-overlay: rgba(12, 184, 182, 1);
+$grey-background: rgba(231, 231, 231, 1);
+$green-box1: rgba(18, 197, 195, 1);
+$green-box2: rgba(12, 184, 182, 1);
+$green-box3: rgba(9, 171, 169, 1);
+$green-box4: rgba(2, 157, 155, 1);
+$green-box5: rgb(2, 133, 130);
+
 // scss-docs-start color-variables
 $blue: #0d6efd !default;
 $indigo: #6610f2 !default;
@@ -60,23 +71,61 @@ $green-700: rgba($color: $green, $alpha: 0.7) !default;
 $green-800: rgba($color: $green, $alpha: 0.8) !default;
 $green-900: rgba($color: $green, $alpha: 0.9) !default;
 
-// $-100: rgba($color: $, $alpha: 0.1) !default;
-// $-200: rgba($color: $, $alpha: 0.2) !default;
-// $-300: rgba($color: $, $alpha: 0.3) !default;
-// $-400: rgba($color: $, $alpha: 0.4) !default;
-// $-500: rgba($color: $, $alpha: 0.5) !default;
-// $-600: rgba($color: $, $alpha: 0.6) !default;
-// $-700: rgba($color: $, $alpha: 0.7) !default;
-// $-800: rgba($color: $, $alpha: 0.8) !default;
-// $-900: rgba($color: $, $alpha: 0.9) !default;
+p{
+  font-family: 'Source Serif Pro', serif !important;
+  font-weight: 300 !important;
+}
+
+
+.btn{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300 !important;
+}
+
+
+// HEAD NAVBAR
+.head-navbar {
+  height: 80px;
+  border-bottom: 1px solid $grey-background;
+}
+
+.mainLogo {
+  height: 50px;
+}
+
+.head-navbar .icon-cell{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.head-navbar .icon-cell{
+font-size: 48px !important;
+}
+
+.head-navbar .icon-cell{
+  color: $green-hover;
+}
+
+.head-navbar h4,
+.head-navbar h5,
+.head-navbar h6{
+  color: $green-hover;
+  margin: 0 !important;
+}
 
 
 // NAVBAR
 
-// .navbar {}
+.navbar {
+  height: 50px;
+}
 
 .navbar-dark.bg-dark {
-  background-color: $teal-900 !important;
+  // background-color: $teal-900 !important;
+  background: none !important;
 }
 
 .navbar .navbar-brand {
@@ -86,120 +135,177 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
   text-shadow: 1px 1px 1px $gray-900;
 }
 
+.navbar .activeMenu {
+  border-bottom: 3px solid $green-baseline;
+}
+
 .navbar .navbar-nav a {
-  color: $gray-800 !important;
+  color: $gray-900 !important;
   font-weight: 600;
   margin: 0 2rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .navbar .navbar-nav a:hover {
-  color: $gray-100 !important;
+  color: $green-baseline !important;
   font-weight: 600;
+  border-bottom: 3px solid $green-baseline;
 }
 
-/* CALL TO ACTION */
 
-.container-aboutus {
-  display: flex;
+// CAROUSEL
+.slide1 {
+  background-image: url("../images/Flyer_Cardio_web_3_16_9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
 }
 
-.container-aboutus img {
-  width: 50vw;
-  margin: 0;
+.carousel-content h1 {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #344C70;
 }
 
-.container-aboutus .aboutus-content {
-  background-color: $gray-300;
-  color: var(--gray-200);
-  padding: 1.5rem;
+.carousel-content h3{
+  color: black;
+  font-family: 'Source Serif Pro', serif !important;
+  font-weight: 400;
+  color: #1D8595;
 }
 
-.container-aboutus .aboutus-content h2 {
-  font-weight: 600;
+.icon-slide1{
+  color: #344C70;
 }
 
-.container-aboutus .btn {
+.carousel-content{
+  background-color: var($green-500) !important;
+}
+
+.carousel-content .btn-area .btn-outline-primary{
+  border: 1px solid #344C70;
+  color: #344C70;
+}
+
+.carousel-content .btn-area .btn-outline-primary:hover{
+  background-color: #344C70;
+  color: #f4f4f4;
+}
+
+// ESPECIALIDADES
+
+.especialidades-content{
+margin: 0.5rem !important;
+}
+
+
+.container-header h2 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.container-header .line {
+  width: 100px;
+  border: 1px solid $green-baseline;
+  margin: 0 auto;
+}
+
+.especialidadesCard {
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.especialidades-content .card1 {
+  background-color: $green-box1;
+}
+
+.especialidades-content .card2 {
+  background-color: $green-box2;
+}
+
+.especialidades-content .card3 {
+  background-color: $green-box3;
+}
+
+.especialidades-content .card4 {
+  background-color: $green-box4;
+}
+
+.especialidades-content .card5 {
+  background-color: $green-box5;
+}
+
+
+
+
+/* ABOUT US */
+
+#about-us-label-horizontal {
+  display: none !important;
+}
+
+#about-us-label-vertical {
+  display: flex !important;
+}
+
+.aboutus-container {
+  background-image: url("../images/sabra_office_1080_blur.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 600px;
+}
+
+
+.aboutus-inner-container {
+  height: 550px;
+  background-color: rgba(231, 231, 231, 0.9);
+  color: var(--gray-300);
+  padding: 1rem;
+}
+
+.aboutus-content h2 {
+  font-family: 'Source Serif Pro', serif !important;
+  font-weight: 400 !important;
+}
+
+.aboutus-content p {
+  font-size: 1.2rem !important;
+  line-height: 2rem !important;
+  font-weight: 300 !important;
+}
+
+
+.aboutus-btn-area .btn {
   padding: 0.5rem 1rem;
   margin: 0.5rem;
   border-radius: 5px;
 }
 
-.container-aboutus .btn-solid {
-  background-color: $teal-900;
-  border: 1px solid $teal-900;
-  color: $gray-100;
+.aboutus-btn-area .btn-solid {
+  background-color: $green-baseline;
+  color: #fff;
   font-weight: 500;
   font-size: 1.2rem;
 }
 
-.container-aboutus .btn-solid:hover {
-  border: 2px solid $teal-900;
-  background-color: transparent;
-  color: var(--gray-900);
-  // transition: 0.2s;
-}
-
-// ESPECIALIDADES
-
-.especialidades {
-  width: 50vw;
-  margin: 2rem auto;
-}
-
-.especialidades h3 {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: $gray-800;
-  border: 2px solid rgba(0,0,0,0.3);
-  border-radius: 50px;
-  background-color: rgba(32,201,151,.6);
-  padding: 0.5rem;
-  margin-top: 1rem;
-}
-
-.especialidades .container-especialidades {
-  width: 80%;
-  margin: 1rem auto;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.especialidades .clinicaMedica,
-.terapiaIntensiva,
-.cardiologiaChagas,
-.medicoLegista {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid $gray-700;
-  border-radius: 10px;
-  padding: 3rem;
-  margin: 0.5rem 0;
-  cursor: pointer;
-  z-index: 100;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.especialidades .especialidadIcon {
-  color: $gray-700;
+.aboutus-btn-area .btn-solid:hover {
+  background-color: $green-hover;
+  color: #fff // transition: 0.2s;
 }
 
 // PRESTADORES
-.prestadores h3 {
-  text-align: center;
-  background-color: $gray-700;
-  color: $gray-100;
-  padding: 0.5rem;
-}
 
-.prestadores .container-prestadores img:hover {
+
+.prestadores-content img:hover {
   transform: scale(0.97);
 }
 
-.prestadores .container-prestadores {
+.prestadores-content {
   width: 80vw;
   margin: 0 auto;
   display: flex;
@@ -208,82 +314,77 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
   align-items: center;
 }
 
-.prestadores .container-prestadores img {
-  margin: 30px;
+.prestadores-content img {
+  margin: 10px;
   height: 40px;
 }
 
 
 // CONTACT
-.contact {
-  background-image: url(../images/estetoscopio.jpg);
-  background-size: auto;
-  background-repeat: no-repeat;
-  // background-position: center;
-  // height: 70vh;
-  // background-attachment: fixed;
-}
 
-.contact .contact-shadow {
-  background-color: rgba(0, 0, 0, 0.4);
+.contact-container iframe {
   width: 100%;
-  height: 100%;
 }
 
-.contact .contact-container {
-  max-width: 1100px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 2rem 0;
-  display: flex;
-  justify-content: space-around;
+.contact-container {
+  position: relative;
 }
 
-.contact .contact-info {
-  width: 45%;
-  background-color: $teal-700;
-  padding: 2rem;
-  color: $gray-100;
-  border-radius: 10px;
+.innerContainer {
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
-.contact .contact-info h6 {
-  color: $gray-300;
+.contact-info-container {
+  width: 100%;
+  height: 450px;
+  padding: 0 !important;
+}
+
+
+.contact-info {
+  background-color: rgba(12, 184, 182, 0.9);
+  margin: 0rem;
+  color: #fff;
+}
+
+.contact-info h6 {
+  color: #fff;
   font-size: 1.4rem;
   font-weight: 600;
 }
 
-.contact .contact-info p {
+.contact-info p {
   color: $gray-100;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
-.contact .contact-form {
+.contact-form {
   width: 45%;
   border-radius: 5px;
-
 }
 
-.contact .contact-form .form {
+.contact-form .form {
   display: flex;
   flex-direction: column;
 }
 
-.contact .contact-form h3 {
+.contact-form h3 {
   color: $gray-100;
   font-size: 2rem;
   font-weight: 600;
 }
 
 
-.contact .contact-form .form-label {
+.contact-form .form-label {
   margin-bottom: 0.3rem;
   color: $gray-200;
   font-size: 1.2rem;
 }
 
-.contact .contact-form .form-input {
+.contact-form .form-input {
   margin-bottom: 0.5rem;
   padding: 0.5rem;
   color: $gray-900;
@@ -291,21 +392,21 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
   border-radius: 5px;
 }
 
-.contact .contact-form .form-message {
+.contact-form .form-message {
   border: none;
   border-radius: 5px;
   padding-left: 0.5rem;
 }
 
-.contact .contact-form .form-input:focus {
+.contact-form .form-input:focus {
   outline: 2px solid $gray-700;
 }
 
-.contact .contact-form .form-message:focus {
+.contact-form .form-message:focus {
   outline: 1px solid $gray-800;
 }
 
-.contact .contact-form .btn {
+.contact-form .btn {
   margin: 1rem 0;
   padding: 0.5rem;
   background-color: $teal-900;
@@ -315,7 +416,7 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
   font-size: 1.5rem;
 }
 
-.contact .contact-form .btn:hover {
+.contact-form .btn:hover {
   margin: 1rem 0;
   padding: 0.5rem;
   background-color: $teal-700;
@@ -323,7 +424,7 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
 
 }
 
-.contact .contact-form .btn:active {
+.contact-form .btn:active {
   transform: scale(0.97);
   border: none;
 }
@@ -453,11 +554,30 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
 
 /* MEDIA QUERIES LG 992*/
 @media(max-width: 992px) {
-  // .showcase .content {
-  //   width: 100%;
-  //   margin-bottom: 20vh;
-  //   text-align: center;
-  // }
+
+  #about-us-label-horizontal {
+    display: block !important;
+  }
+
+  #about-us-label-vertical {
+    display: none !important;
+  }
+
+  .aboutus-inner-container {
+    height: 400px;
+    background-color: rgba(231, 231, 231, 0.9);
+    color: var(--gray-300);
+    padding: 1rem !important;
+  }
+
+  .aboutus-content p {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+  }
+
+  .aboutus-btn-area .btn-solid {
+    font-size: 1rem;
+  }
 
   .container-aboutus {
     width: 70vw;
@@ -502,6 +622,20 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
 
 
 @media(max-width: 768px) {
+
+#head-navbar-phone{
+  display: none !important;
+}
+
+#head-navbar-location{
+  display: none !important;
+}
+
+  .container-aboutus {
+    width: 90vw;
+    margin: 0 auto;
+    flex-direction: column;
+  }
 
   .container-aboutus .aboutus-content {
     text-align: center;
@@ -549,18 +683,17 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
     width: 100%;
     margin: 0 auto;
   }
-  
+
   .especialidades h3 {
     font-size: 1.3rem;
   }
 
   .especialidades .clinicaMedica,
-.terapiaIntensiva,
-.cardiologiaChagas,
-.medicoLegista {
-  padding: 2.5rem;
-  margin: 0.5rem 0;
-}
+  .terapiaIntensiva,
+  .cardiologiaChagas,
+  .medicoLegista {
+    padding: 2.5rem;
+  }
 
   .contact .contact-container .contact-info {
     width: 100%;
@@ -614,13 +747,6 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
 
 
 @media(max-width: 576px) {
-
-
-  .container-aboutus {
-    width: 90vw;
-    margin: 0 auto;
-    flex-direction: column;
-  }
 
   .contact .contact-container .contact-form .btn {
     width: 100%;

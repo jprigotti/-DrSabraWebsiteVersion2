@@ -21,22 +21,64 @@
   <!-- Vue Framework -->
   <script src="https://unpkg.com/vue@3"></script>
 
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;1,300&display=swap"
+    rel="stylesheet">
+
+  <!-- GOOGLE ICONS -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 
 <body>
 
+  <!-- HEAD NAVBAR -->
+  <div class="head-navbar">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-4 d-flex">
+          <img src="./images/logo_v2.png" alt="Consultorio" class="mainLogo align-self-center mx-3">
+          <h3 class="align-self-center">Consultorio Dr Sabra</h3>
+        </div>
+        <div id="head-navbar-phone" class="col-4 d-flex justify-content-end">
+          <span class="material-symbols-outlined icon-cell align-self-center">
+            phone_iphone
+          </span>
+          <div class="d-flex align-conent-center">
+            <h4 class="align-self-center">(011) 4796-5706</h4>
+          </div>
+        </div>
+
+        <div id="head-navbar-location" class="col-4 d-flex justify-content-end">
+          <span class="material-symbols-outlined icon-cell align-self-center">
+            location_on
+          </span>
+          <div class="align-self-center">
+            <h5 class="align-self-center">Av. Maipu 1343 4D</h5>
+            <h6 class="align-self-center">Vicente López - Bs. As.</h6>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-md">
-      <a class="navbar-brand" href="#">Consultorio Dr. Sabra</a>
+      <!-- <a class="navbar-brand" href="#">Consultorio Dr. Sabra</a> -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutus">Inicio</a>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item ">
+            <a class="nav-link activeMenu" href="#aboutus">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#espcialidades">Especialidades</a>
@@ -52,55 +94,136 @@
     </div>
   </nav>
 
-  <!-- ABOUTUS -->
+  <!-- CAROUSEL -->
 
-  <section class="aboutus" id="aboutus">
-    <div class="container-aboutus">
+  <div id="carouselHeader" class="container carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item slide1 active d-flex justify-content-end px-3 py-3">
+        <div class="carousel-content col-12 col-md-6 align-self-center">
+          <div>
+            <h1 class="mb-5 text-center">NOVEDADES EN CARDIOLOGIA</h1>
+          </div>
+          <div class="d-flex align-conent-center"> <span class="icon-slide1 material-symbols-outlined mt-1 me-2">
+              task_alt
+            </span>
+            <h3>Estudios</h3>
+          </div>
+          <div class="d-flex align-conent-center"> <span class="icon-slide1 material-symbols-outlined mt-1 me-2">
+              task_alt
+            </span>
+            <h3>Evaluación de riesgo quirurgico</h3>
+          </div>
+          <div class="d-flex align-conent-center"> <span class="icon-slide1 material-symbols-outlined mt-1 me-2">
+              task_alt
+            </span>
+            <h3>Atención a pacientes con enfermedad de Chagas</h3>
+          </div>
 
-      <!-- <img src="./images/office.jpg" alt="Consultorio">  -->
-
-      <picture>
-        <source srcset="./images/sabra_office_1080.jpg" media="(min-width:576px)">
-        <img src="./images/sabra_office_700.jpg" alt="Consultorio">
-      </picture>
-
-      <div class="aboutus-content">
-        <h2>Dr. Sabra Ahmad</h2>
-        <p>Me recibí en la Facultad de Medicina de la Universidad de Buenos Aires hace 30 años y desde entonces procuré
-          una formación médica contínua para poder darle la mejor atención a mis pacientes.
-          En mi consultorio, acompañado por un equipo de colaboradores tenemos la convicción de que la calidad de
-          atención centrada en el paciente es nuestra máxima prioridad.
-        </p>
-        <!-- <a href="#" class="btn btn-solid">Conocé el consultorio</a> -->
-        <a class="popUpImage btn btn-solid" href="#">Conocé el consultorio</a>
+          <div class="btn-area text-center">
+            <a class="btn btn-outline-primary" href="#">Ver mas</a>
+          </div>
+        </div>
       </div>
+      <!-- <div class="carousel-item slide2">
+      <img src="..." class="d-block w-100" alt="...">
     </div>
-  </section>
+    <div class="carousel-item slide3">
+      <img src="..." class="d-block w-100" alt="...">
+    </div> -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
   <!-- ESPECIALIDADES -->
-  <section class="especialidades" id="espcialidades">
-    <h3 id="app">{{especialidad}}</h3>
-    <div class="container-especialidades">
-      <div class="clinicaMedica">
-        <i class="especialidadIcon fa-solid fa-stethoscope fa-2xl"></i>
+
+  <div class="especialidades-container container my-5" id="espcialidades">
+    <div class="especialidades-content row d-flex justify-content-center">
+
+      <div class="container-header mb-5">
+        <h2 class="text-center">Especialidades</h2>
+        <div class="line"></div>
       </div>
-      <div class="terapiaIntensiva">
-        <i class="especialidadIcon fa-solid fa-user-doctor fa-2xl"></i>
+
+      <div class="col-12 col-lg-2 especialidadesCard card1 cardiologiaEstudios">
+        <h4>Cardiologia</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, quo?</p>
       </div>
-      <div class="cardiologiaChagas">
-        <i class="especialidadIcon fa-solid fa-heart-pulse fa-2xl"></i>
+      <div class="col-12 col-lg-2 especialidadesCard card2 clinicaMedica">
+        <h4>Clinica Medica</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, quo?</p>
       </div>
-      <div class="medicoLegista">
-        <i class="especialidadIcon fa-solid fa-book-medical fa-2xl"></i>
+      <div class="col-12 col-lg-2 especialidadesCard card3 terapiaIntensiva">
+        <h4>Terapia Intensiva</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, quo?</p>
+      </div>
+      <div class="col-12 col-lg-2 especialidadesCard card4 cardiologiaChagas">
+        <h4>Cardiologia Chagas</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, quo?</p>
+      </div>
+      <div class="col-12 col-lg-2 especialidadesCard card5 medicoLegista">
+        <h4>Medico Legista</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, quo?</p>
       </div>
     </div>
-  
-  </section>
+  </div>
+
+
+  <!-- ABOUT US -->
+
+  <div class="container aboutus-container">
+    <div id="about-us-label-vertical" class="h-100 row d-flex justify-content-end">
+      <div class="aboutus-inner-container col-4 align-self-center">
+        <div class="aboutus-content">
+          <h2>Dr. Sabra Ahmad</h2>
+          <p>Me recibí en la Facultad de Medicina de la Universidad de Buenos Aires hace 30 años y desde entonces
+            procuré
+            una formación médica contínua para poder darle la mejor atención a mis pacientes.
+            En mi consultorio, acompañado por un equipo de colaboradores tenemos la convicción de que la calidad de
+            atención centrada en el paciente es nuestra máxima prioridad.
+          </p>
+        </div>
+        <div class="aboutus-btn-area d-flex justify-content-center">
+          <a class="popUpImage btn btn-solid" href="#">Conocé el consultorio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container d-flex" id="about-us-label-horizontal">
+    <div class="row d-flex justify-content-end align-self-end">
+      <div class="aboutus-inner-container col-12">
+        <div class="aboutus-content">
+          <h2>Dr. Sabra Ahmad</h2>
+          <p>Me recibí en la Facultad de Medicina de la Universidad de Buenos Aires hace 30 años y desde entonces
+            procuré
+            una formación médica contínua para poder darle la mejor atención a mis pacientes.
+            En mi consultorio, acompañado por un equipo de colaboradores tenemos la convicción de que la calidad de
+            atención centrada en el paciente es nuestra máxima prioridad.
+          </p>
+        </div>
+        <div class="aboutus-btn-area d-flex justify-content-center">
+          <a class="popUpImage btn btn-solid" href="#">Conocé el consultorio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   <!-- PRESTADORES -->
-  <section class="prestadores" id="prestadores">
-    <h3>Nuestros Prestadores</h3>
-    <div class="container-prestadores">
+  <section class="prestadores-container my-5" id="prestadores">
+    <div class="container-header mb-5">
+      <h2 class="text-center">Nuestros prestadores</h2>
+      <div class="line"></div>
+    </div>
+
+    <div class="prestadores-content">
       <img class="imgaAndar" src="./images/andarh55.png" alt="ANDAR">
       <img class="imgPami" src="./images/PAMIh55.png" alt="PAMI">
       <img class="imgEnsalud" src="./images/ensaludh55.png" alt="ENSALUD">
@@ -108,11 +231,19 @@
   </section>
 
 
+
   <!-- CONTACT -->
-  <div class="contact parallax--bg" id="contact">
-    <div class="contact-shadow">
-      <div class="contact-container">
-        <div class="contact-info">
+  <div class="contact-container mb-1" id="contact">
+
+    <iframe class="contact-form"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.127786434772!2d-58.4826031!3d-34.5249903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb14b1daca277%3A0xc93f4843c151f141!2sAv.%20Maip%C3%BA%201343%20b1638%2C%20B1638%20Florida%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1651788216570!5m2!1ses-419!2sar"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <div class="innerContainer d-flex justify-content-center">
+      <div class="contact-info-container container row d-flex justify-content-end">
+        <div class="contact-info px-3 py-3 col-10 col-md-6 col-lg-4">
           <h6>Dirección</h6>
           <p>Av. Maipu 1343 4D - Vicente López - Bs. As.</p>
           <h6>Teléfono</h6>
@@ -120,31 +251,10 @@
           <h6>E-mail</h6>
           <p>consultoriosabra@gmail.com</p>
         </div>
-
-        <iframe class="contact-form"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.127786434772!2d-58.4826031!3d-34.5249903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb14b1daca277%3A0xc93f4843c151f141!2sAv.%20Maip%C3%BA%201343%20b1638%2C%20B1638%20Florida%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1651788216570!5m2!1ses-419!2sar"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        <!-- <div class="contact-form">
-          <h3>Contactanos</h3>
-          <form class="form" action="">
-            <label class="form-label" for="nombreyapellido">Nombre y Apellido</label>
-            <input class="form-input" type="text" name="nombreyapellido" required>
-            <label class="form-label" for="Telefono">Teléfono</label>
-            <input class="form-input" type="text" name="telefono">
-            <label class="form-label" for="email">E-mail</label>
-            <input class="form-input" type="text" name="email" required>
-            <label class="form-label" for="message">Mensaje</label>
-            <textarea class="form-message" name="message" id="" cols="30" rows="6" placeholder="Escribinos tu mensaje"
-              required></textarea>
-            <input class="btn" type="submit" value="Enviar">
-          </form>
-        </div> -->
-
-
       </div>
+
     </div>
+
   </div>
 
 
@@ -173,7 +283,6 @@
   <div class="containerPopup">
     <div class="popup-img">
       <span>&times</span>
-      <!-- <img src="./images/sabra_consultorio.jpeg" alt=""> -->
 
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -198,12 +307,6 @@
           <div class="carousel-item">
             <img src="./images/sabra_consultorio2.jpeg" class="d-block w-100" alt="...">
           </div>
-          <!-- <div class="carousel-item">
-            <img src="./images/sabra_consultorio7.jpeg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/sabra_consultorio8.jpeg" class="d-block w-100" alt="...">
-          </div> -->
 
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
