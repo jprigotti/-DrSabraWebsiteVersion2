@@ -55,34 +55,34 @@
 
 
 // Vue.createApp({
-    const vm = Vue.createApp({
-        data() {
-            return {
-                especialidad : "Especialidades",
-            };
-        },
-        methods: {
-            input1(e) {
-                this.p1Text = e.target.value;
-            },
-            input2(e) {
-                this.p2Text = e.target.value;
-            }
-        },
-        //directiva de interpolacion de texto v-text
-        // template: `<div v-html="mensaje"></div>
-        //             <img class="imgClass" v-bind:[imgAttr]="imgSrc">
-        //             <br>
-        //             <input type="text" v-bind:placeholder="input1Text" v-on:change="input1">
-        //             <input type="text" :placeholder="input2Text" @input="input2" >
-        //             <input id="input3" type="text" placeholder="Type something">
-        //             <input type="text" placeholder="Type something" v-model="p4Text">
+    // const vm = Vue.createApp({
+    //     data() {
+    //         return {
+    //             especialidad : "Especialidades",
+    //         };
+    //     },
+    //     methods: {
+    //         input1(e) {
+    //             this.p1Text = e.target.value;
+    //         },
+    //         input2(e) {
+    //             this.p2Text = e.target.value;
+    //         }
+    //     },
+    //     //directiva de interpolacion de texto v-text
+    //     // template: `<div v-html="mensaje"></div>
+    //     //             <img class="imgClass" v-bind:[imgAttr]="imgSrc">
+    //     //             <br>
+    //     //             <input type="text" v-bind:placeholder="input1Text" v-on:change="input1">
+    //     //             <input type="text" :placeholder="input2Text" @input="input2" >
+    //     //             <input id="input3" type="text" placeholder="Type something">
+    //     //             <input type="text" placeholder="Type something" v-model="p4Text">
     
     
-        //             <p>Input 1 - You entered: {{p1Text}}</p>
-        //             <p>Input 2 - You entered: {{p2Text}}</p>
-        //             <p id="p3">Input 3 - You entered: </p>
-        //             <p>Input 4 - You entered: {{p4Text}}</p>
-        //             `
+    //     //             <p>Input 1 - You entered: {{p1Text}}</p>
+    //     //             <p>Input 2 - You entered: {{p2Text}}</p>
+    //     //             <p id="p3">Input 3 - You entered: </p>
+    //     //             <p>Input 4 - You entered: {{p4Text}}</p>
+    //     //             `
     
-    }).mount('#app');
+    // }).mount('#app');
