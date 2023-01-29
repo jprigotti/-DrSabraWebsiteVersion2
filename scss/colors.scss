@@ -28,6 +28,7 @@ $green-box2: rgba(12, 184, 182, 1);
 $green-box3: rgba(9, 171, 169, 1);
 $green-box4: rgba(2, 157, 155, 1);
 $green-box5: rgb(2, 133, 130);
+$blue-btn: rgba(52, 76, 112, 1);
 
 // scss-docs-start color-variables
 $blue: #0d6efd !default;
@@ -71,17 +72,71 @@ $green-700: rgba($color: $green, $alpha: 0.7) !default;
 $green-800: rgba($color: $green, $alpha: 0.8) !default;
 $green-900: rgba($color: $green, $alpha: 0.9) !default;
 
-p{
+// UTILIDADES
+
+p {
   font-family: 'Source Serif Pro', serif !important;
   font-weight: 300 !important;
 }
 
 
-.btn{
+// BUTTONS
+
+.btn {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300 !important;
+  border-radius: 0 !important;
 }
 
+.btn-outline-white {
+  color: #fff !important;
+  border: 1px solid #fff !important;
+}
+
+.btn-outline-white:hover {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+.btn-outline-green {
+  color: $green-baseline !important;
+  border: 1px solid $green-baseline !important;
+}
+
+.btn-outline-green:hover {
+  color: #fff !important;
+  background-color: $green-baseline !important;
+}
+
+.btn-outline-blue {
+  color: $blue-btn !important;
+  border: 1px solid $blue-btn !important;
+}
+
+.btn-outline-blue:hover {
+  color: #fff !important;
+  background-color: $blue-btn !important;
+}
+
+.btn-solid-green {
+  color: #fff !important;
+  background-color: $green-baseline !important;
+}
+
+.btn-solid-green:hover {
+  background-color: $green-hover !important;
+}
+
+.btn-solid-blue {
+  color: #fff !important;
+  background-color: $blue-btn !important;
+}
+
+.btn-solid-blue:hover {
+  color: $blue-btn !important;
+  background: none !important;
+  border: 1px solid $blue-btn !important;
+}
 
 // HEAD NAVBAR
 .head-navbar {
@@ -93,25 +148,25 @@ p{
   height: 50px;
 }
 
-.head-navbar .icon-cell{
+.head-navbar .icon-cell {
   font-variation-settings:
-  'FILL' 0,
-  'wght' 200,
-  'GRAD' 0,
-  'opsz' 48
+    'FILL'0,
+    'wght'200,
+    'GRAD'0,
+    'opsz'48
 }
 
-.head-navbar .icon-cell{
-font-size: 48px !important;
+.head-navbar .icon-cell {
+  font-size: 48px !important;
 }
 
-.head-navbar .icon-cell{
+.head-navbar .icon-cell {
   color: $green-hover;
 }
 
 .head-navbar h4,
 .head-navbar h5,
-.head-navbar h6{
+.head-navbar h6 {
   color: $green-hover;
   margin: 0 !important;
 }
@@ -119,41 +174,31 @@ font-size: 48px !important;
 
 // NAVBAR
 
-.navbar {
+#menu-desktop {
   height: 50px;
-}
-
-.navbar-dark.bg-dark {
-  // background-color: $teal-900 !important;
-  background: none !important;
-}
-
-.navbar .navbar-brand {
-  font-size: 1.7rem;
-  font-weight: 600;
-  margin: 1rem 0;
-  text-shadow: 1px 1px 1px $gray-900;
-}
-
-.navbar .activeMenu {
-  border-bottom: 3px solid $green-baseline;
-}
-
-.navbar .navbar-nav a {
-  color: $gray-900 !important;
-  font-weight: 600;
-  margin: 0 2rem;
+  font-weight: 400;
   font-size: 1.1rem;
 }
 
-.navbar .navbar-nav a:hover {
-  color: $green-baseline !important;
-  font-weight: 600;
-  border-bottom: 3px solid $green-baseline;
+.navbar-inner-container {
+  height: 90% !important;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000 !important;
+}
+
+.nav-link:hover {
+  // color: $green-baseline !important;
+  border-bottom: 2px solid $green-baseline;
 }
 
 
+
 // CAROUSEL
+.carousel {}
+
 .slide1 {
   background-image: url("../images/Flyer_Cardio_web_3_16_9.jpg");
   background-size: cover;
@@ -170,35 +215,35 @@ font-size: 48px !important;
   color: #344C70;
 }
 
-.carousel-content h3{
+.carousel-content h3 {
   color: black;
   font-family: 'Source Serif Pro', serif !important;
   font-weight: 400;
   color: #1D8595;
 }
 
-.icon-slide1{
+.icon-slide1 {
   color: #344C70;
 }
 
-.carousel-content{
+.carousel-content {
   background-color: var($green-500) !important;
 }
 
-.carousel-content .btn-area .btn-outline-primary{
+.carousel-content .btn-area .btn-outline-primary {
   border: 1px solid #344C70;
   color: #344C70;
 }
 
-.carousel-content .btn-area .btn-outline-primary:hover{
+.carousel-content .btn-area .btn-outline-primary:hover {
   background-color: #344C70;
   color: #f4f4f4;
 }
 
 // ESPECIALIDADES
 
-.especialidades-content{
-margin: 0.5rem !important;
+.especialidades-content {
+  margin: 0.5rem !important;
 }
 
 
@@ -208,14 +253,14 @@ margin: 0.5rem !important;
   margin-bottom: 1rem;
 }
 
-.container-header .line {
+.line {
   width: 100px;
   border: 1px solid $green-baseline;
   margin: 0 auto;
 }
 
 .especialidadesCard {
-  padding: 0.5rem;
+  padding: 2rem !important;
   color: #fff;
 }
 
@@ -280,23 +325,6 @@ margin: 0.5rem !important;
 }
 
 
-.aboutus-btn-area .btn {
-  padding: 0.5rem 1rem;
-  margin: 0.5rem;
-  border-radius: 5px;
-}
-
-.aboutus-btn-area .btn-solid {
-  background-color: $green-baseline;
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.2rem;
-}
-
-.aboutus-btn-area .btn-solid:hover {
-  background-color: $green-hover;
-  color: #fff // transition: 0.2s;
-}
 
 // PRESTADORES
 
@@ -340,13 +368,42 @@ margin: 0.5rem !important;
   width: 100%;
   height: 450px;
   padding: 0 !important;
+  max-width: 1320px;
 }
 
 
 .contact-info {
-  background-color: rgba(12, 184, 182, 0.9);
+  background-color: $green-baseline;
   margin: 0rem;
   color: #fff;
+  width: 350px !important;
+  position: relative;
+  transition-duration: 0.5s;
+}
+
+.contact-info-controller {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: $orange;
+  left: 0;
+  z-index: 1;
+  transition-duration: 0.5s;
+}
+
+.contact-info-controller-container {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  z-index: 2;
+  transition-duration: 0.5s;
+}
+
+.contact-info-show {
+  width: 40px;
+  height: 40px;
+  opacity: 0;
 }
 
 .contact-info h6 {
@@ -546,7 +603,43 @@ margin: 0.5rem !important;
 }
 
 
+// MODAL POPUP CARDIOLOGIA
+.modal-header {
+  color: #fff;
+  background-color: $green-baseline;
+}
 
+.modal-cardiologia-highlight {
+  border: 2px solid $green-baseline;
+  position: relative !important;
+}
+
+.modal-cardiologia-highlight-title {
+  position: absolute !important;
+  top: -30px;
+  background-color: #fff;
+}
+
+.modal-cardiologia-highlight-footer {
+  margin: 0 auto;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+}
+
+.modal-cardiologia-highlight-footer h4 {
+  background-color: #fff;
+  border: 2px solid $green-baseline;
+  border-radius: 5px;
+}
+
+.day {
+  border-radius: 5px;
+  background-color: $green-baseline !important;
+  color: #FFF;
+  padding: 0.5rem 0rem !important;
+}
 
 /* ****************************************************** */
 /* MEDIA QUERIES */
@@ -554,6 +647,22 @@ margin: 0.5rem !important;
 
 /* MEDIA QUERIES LG 992*/
 @media(max-width: 992px) {
+
+  .head-navbar .menu-wrap-outer-container {
+    display: flex;
+  }
+
+  #menu-desktop {
+    display: none !important;
+  }
+
+  #head-navbar-phone {
+    display: none !important;
+  }
+
+  #head-navbar-location {
+    display: none !important;
+  }
 
   #about-us-label-horizontal {
     display: block !important;
@@ -623,14 +732,6 @@ margin: 0.5rem !important;
 
 @media(max-width: 768px) {
 
-#head-navbar-phone{
-  display: none !important;
-}
-
-#head-navbar-location{
-  display: none !important;
-}
-
   .container-aboutus {
     width: 90vw;
     margin: 0 auto;
@@ -686,13 +787,6 @@ margin: 0.5rem !important;
 
   .especialidades h3 {
     font-size: 1.3rem;
-  }
-
-  .especialidades .clinicaMedica,
-  .terapiaIntensiva,
-  .cardiologiaChagas,
-  .medicoLegista {
-    padding: 2.5rem;
   }
 
   .contact .contact-container .contact-info {
@@ -788,5 +882,10 @@ margin: 0.5rem !important;
     top: 110%;
     right: 20%;
   }
+
+  .contact-info {
+    // transform: translate3d(350px,0,0)
+  }
+
 
 }
