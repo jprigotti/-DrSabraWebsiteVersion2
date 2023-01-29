@@ -16,19 +16,19 @@ $('.btn-modal-popup-cardiologia').click(function(){
 })
 
 $('.menu-option').click(function(){
-  $('.menu').css({'left': -350});
+  $('.menu').css({'left': '-350px'});
   $('.toggler').prop('checked', false);
+  $("body").css("overflow", "visible"); 
 });
+
 
 $('.toggler').click(function(){
   if($(this).is(":checked")){
-    // $('.menu').css({'visibility':'visible'});
-    $('.menu').css({'left': 0});
-    // $('.menuContainer').css({'transition-duration': '0.5s'});
+    $('.menu').css({'left': '0'});
+    $("body").css("overflow", "hidden");    
   }else{
-    // $('.menu').css({'visibility':'hidden'});
-    $('.menu').css({'left': -350});
-    // $('.menuContainer').css({'transition-duration': '0.5s'});
+    $('.menu').css({'left': '-350px'});
+    $("body").css("overflow", "visible"); 
   }
 })
 
