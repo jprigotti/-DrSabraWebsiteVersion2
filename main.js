@@ -16,7 +16,7 @@ $('.btn-modal-popup-cardiologia').click(function(){
 })
 
 $('.menu-option').click(function(){
-  $('.menu').css({'left': '-300px'});
+  $('.menu').css({'left': '-350px'});
   $('.toggler').prop('checked', false);
   $("body").css("overflow", "visible"); 
 });
