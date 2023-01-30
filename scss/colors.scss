@@ -30,6 +30,11 @@ $green-box4: rgba(2, 157, 155, 1);
 $green-box5: rgb(2, 133, 130);
 $blue-btn: rgba(52, 76, 112, 1);
 
+$blue-background-1: #3156A3;
+$blue-background-2: #0384CE;
+$blue-background-3: #42B3E5;
+
+
 // scss-docs-start color-variables
 $blue: #0d6efd !default;
 $indigo: #6610f2 !default;
@@ -74,11 +79,26 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
 
 // UTILIDADES
 
+
+html{
+  scroll-behavior: smooth !important;
+  transition-duration: 500ms
+}
+
 p {
   font-family: 'Source Serif Pro', serif !important;
   font-weight: 300 !important;
 }
 
+li {
+  font-family: 'Source Serif Pro', serif !important;
+  font-weight: 300 !important;
+}
+
+a{
+  text-decoration: none !important;
+  color: #FFF !important;
+}
 
 // BUTTONS
 
@@ -138,6 +158,34 @@ p {
   border: 1px solid $blue-btn !important;
 }
 
+
+//LINES
+
+.line-green {
+  width: 100px;
+  border-bottom: 2px solid $green-baseline;
+  margin: 0 auto;
+}
+
+.line-grey {
+  width: 100%;
+  border-bottom: 1px solid $grey-background;
+  margin: 0 auto;
+}
+
+
+//ICONS
+.icon-background-grey{
+  background-color: #f4f4f4;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+ 
+.icon-color-blue{
+  color: $blue-btn;
+}
+
 // HEAD NAVBAR
 .head-navbar {
   height: 80px;
@@ -194,6 +242,12 @@ p {
   border-bottom: 2px solid $green-baseline;
 }
 
+.nav-item{
+  color: black;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 1rem;
+}
 
 
 // CAROUSEL
@@ -253,11 +307,6 @@ p {
   margin-bottom: 1rem;
 }
 
-.line {
-  width: 100px;
-  border: 1px solid $green-baseline;
-  margin: 0 auto;
-}
 
 .especialidadesCard {
   padding: 2rem !important;
@@ -353,6 +402,7 @@ p {
 
 .contact-container {
   position: relative;
+  height: 450px;
 }
 
 .contact-container-iframe {
@@ -626,21 +676,68 @@ p {
 
 
 // MODAL POPUP CARDIOLOGIA
+
 .modal-header {
   color: #fff;
-  background-color: $green-baseline;
+  background-color: $blue-background-2;
 }
 
-.modal-cardiologia-highlight {
-  border: 2px solid $green-baseline;
+.highlight-frame-container {
+  border: 1px solid $blue-background-2;
   position: relative !important;
 }
 
-.modal-cardiologia-highlight-title {
+.highlight-frame-title {
   position: absolute !important;
   top: -30px;
   background-color: #fff;
 }
+
+.form-control{
+  background-color: #f4f4f4 !important;
+}
+
+.form-label{
+  font-family: 'Source Serif Pro', serif !important;
+  font-weight: 300 !important;
+}
+
+
+.modal-footer{
+  background-color: $gray-700 !important;
+}
+
+.modal-footer-call{
+  background-color: $blue-background-3;
+  margin: 0 !important;
+  width: 90%;
+  color: #FFF;
+}
+
+.modal-footer-email{
+  background-color: $blue-background-2;
+  margin: 0 !important;
+  width: 90%;
+  color: #FFF;
+}
+
+.modal-footer-map{
+background-color: $blue-background-1;
+margin: 0 !important;
+width: 90%;
+color: #FFF;
+}
+
+.modal-footer-arrow-up{
+margin: 0 !important;
+width: 90%;
+color: #FFF;
+}
+
+
+
+
+
 
 .modal-cardiologia-highlight-footer {
   margin: 0 auto;
