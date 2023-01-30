@@ -16,7 +16,7 @@ $('.btn-modal-popup-cardiologia').click(function(){
 })
 
 $('.menu-option').click(function(){
-  $('.menu').css({'left': '-350px'});
+  $('.menu').css({'left': '-300px'});
   $('.toggler').prop('checked', false);
   $("body").css("overflow", "visible"); 
 });
@@ -27,7 +27,7 @@ $('.toggler').click(function(){
     $('.menu').css({'left': '0'});
     $("body").css("overflow", "hidden");    
   }else{
-    $('.menu').css({'left': '-350px'});
+    $('.menu').css({'left': '-300px'});
     $("body").css("overflow", "visible"); 
   }
 })
@@ -36,7 +36,7 @@ $('.toggler').click(function(){
 //Para comprimir y expandir el contact-info
 $('.contact-info-show').click(function(){
   if($(this).is(":checked")){
-    $('.contact-info').css({'transform': 'translate3d(350px,0,0)'});
+    $('.contact-info').css({'transform': 'translate3d(300px,0,0)'});
     $('.contact-info-controller').css({'left': '-40px'});
     $('.contact-info-controller-container').css({'left': '-40px'});
     $('.fa-caret-right').css({'transform': 'rotate(180deg)'});
