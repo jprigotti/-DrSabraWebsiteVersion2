@@ -27,7 +27,7 @@ $('.toggler').click(function(){
     $('.menu').css({'left': '0'});
     $("body").css("overflow", "hidden");    
   }else{
-    $('.menu').css({'left': '-300px'});
+    $('.menu').css({'left': '-350px'});
     $("body").css("overflow", "visible"); 
   }
 })
