@@ -113,7 +113,10 @@ $('.contact-info-show').click(function () {
   }
 })
 
-
+$('.btn-scroll-top').click(function(){
+  var modal=document.querySelector('.modal');
+  modal.scrollTo(0,0);
+})
 
 
 

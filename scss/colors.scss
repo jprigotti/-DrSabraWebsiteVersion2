@@ -1,3 +1,7 @@
+:root {
+  --bs-font-sans-serif: 'Source Serif Pro', serif !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -82,8 +86,10 @@ $green-900: rgba($color: $green, $alpha: 0.9) !default;
 
 html{
   scroll-behavior: smooth !important;
-  transition-duration: 500ms
+  transition-duration: 500ms;
+  scroll-padding-top: 40px;  /*this line fixes this issue: When I click on a navbar link, it scrolls down and overlaps the title of each section  */
 }
+
 
 p {
   font-family: 'Source Serif Pro', serif !important;
@@ -677,6 +683,10 @@ a{
 
 // MODAL POPUP CARDIOLOGIA
 
+.modal{
+  scroll-behavior: smooth !important;
+}
+
 .modal-header {
   color: #fff;
   background-color: $blue-background-2;
@@ -960,6 +970,10 @@ color: #FFF;
 
 
 @media(max-width: 576px) {
+
+  .aboutus-container {
+    background-position: 20% 0%;
+  }
 
   .contact .contact-container .contact-form .btn {
     width: 100%;
