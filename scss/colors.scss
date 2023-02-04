@@ -972,7 +972,11 @@ color: #FFF;
 @media(max-width: 576px) {
 
   .aboutus-container {
-    background-position: 20% 0%;
+    background-image: url("../images/sabra_office_576px_blur.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
   }
 
   .contact .contact-container .contact-form .btn {
